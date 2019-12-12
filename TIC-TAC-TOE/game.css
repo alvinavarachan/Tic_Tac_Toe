@@ -1,0 +1,51 @@
+.box{
+  margin : auto;
+}
+
+/*css for game table */
+table ,th, tr{
+  height: 100px;
+  width:  350px;
+  color: red;
+  text-align: center;
+
+}
+
+
+/*css for scorecard table */
+.score th, tr{
+
+  border: 0px solid black;
+  height: 20px;
+  width:  20px;
+  color: red;
+  text-align: center;
+
+}
+
+/*css for game table butons*/
+.bttn{
+
+	height: 80px;
+	width: 100px;
+	background: #855e42;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	border-style: none;
+
+
+}
+
+/*css for button */
+.btn{
+	width: 120px;
+}
+
+/*css for game table button value */
+input[type= "submit"]
+{
+  color: black;
+  background-image: url(button.jpg);
+}
+

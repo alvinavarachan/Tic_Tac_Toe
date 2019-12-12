@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TIC-TAC-TOE</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="game.css">
+	<script src="game_functions.js"></script>
+</head>
+<body >
+	<div class="container">
+		<!-- header -->
+		<nav class="navbar navbar-dark bg-primary">
+			<a class="navbar-brand"><h1 style="color: white">TIC-TAC-TOE</h1></a>
+		</nav>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+			<!-- login form -->
+			  <label>Player-1</label>
+		      <input type="text" class="form-control is-valid" id="p1name" placeholder="Enter your name" required>
+		      <br>
+		      <label>Player-2</label>
+		      <input type="text" class="form-control is-valid" id="p2name" placeholder="Enter your name" required>
+		      <br> 
+		      <button class="btn btn-primary" id="btnlog"  onclick="username()">Click to Start</button>
+			</div>
+			<div class="col-md-4">
+				<br>
+				<!-- space for printing game over and winner name -->
+				<h1 style="font-weight: bold; color: red; text-align: center;"><div id="messege"></div></h1>
+				<h2 style="font-weight: bold; color: green; text-align: center;"><div id="winner"></div></h2>
+			</div>
+			<div class="col-md-4"  >
+				<!-- table for score board -->
+				<table id="score" class="score" >
+					<tr style="border-bottom: 2px solid black">
+						<th>Player Name</th>
+						<th>Points</th>
+					</tr>
+					<tr>
+						<th><div id="pl1"> PLAYER-1  ( X )</div></th>
+						<th><div id="p1score">0</div></th>
+					</tr>
+					<tr>
+						<th> <div id="pl2"> PLAYER-2  ( O )</div> </th>
+						<th><div id="p2score">0</div></th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<br>
+			<!-- table for game buttons -->
+			<table class = "box" id="box" >
+				<tr>
+					<th ><input type="submit" id="0" class="bttn" value="" onclick="check(this.id)"></th>
+					<th ><input type="submit" id="1" class="bttn" value="" onclick="check(this.id)"></th>
+					<th ><input type="submit" id="2" class="bttn" value="" onclick="check(this.id)"></th>
+				</tr>
+				<tr>
+					<th ><input type="submit" id="3" class="bttn" value="" onclick="check(this.id)"></th>
+					<th > <input type="submit" id="4" class="bttn" value="" onclick="check(this.id)"></th>
+					<th ><input type="submit" id="5" class="bttn" value="" onclick="check(this.id)"></th>
+				</tr>
+				<tr>
+					<th ><input type="submit" id="6" class="bttn" value="" onclick="check(this.id)"></th>
+					<th ><input type="submit" id="7" class="bttn" value="" onclick="check(this.id)"></th>
+					<th ><input type="submit" id="8" class="bttn" value="" onclick="check(this.id)"></th>
+				</tr>
+			</table>	
+		<br>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-2">
+				<button class="btn btn-success" id="plagain" type="submit" onclick="reset()" >PLAY AGAIN</button>
+			</div>
+			<div class="col-md-2">
+				<button class="btn btn-danger" id="restart" type="submit" onclick="restart()" >RESTART</button>
+			</div>
+		</div>
+		<br><br>
+	</div>
+</body>
+</html>
+
+
